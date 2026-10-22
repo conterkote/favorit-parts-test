@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "checkJs": false,
+    "paths": {
+      "@Store": ["./src/store/store.js"],
+      "@Ui/*": ["./src/components/UI/*"],
+      "@Entities/*": ["./src/components/entities/*"],
+      "@Features/*": ["./src/components/features/*"],
+      "@Widgets/*": ["./src/components/widgets/*"],
+      "@Pages/*": ["./src/components/pages/*"],
+      "@Layouts/*": ["./src/components/Layouts/*"],
+      "@Store/*": ["./src/store/*"],
+      "@Utility/*": ["./src/utility/*"],
+      "@Assets/*": ["./src/assets/*"]
+    }
+  },
+  "include": ["src", "server", "tests", "vite.config.js"],
+  "exclude": ["node_modules", "dist"]
+}

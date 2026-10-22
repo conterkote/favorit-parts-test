@@ -1,0 +1,33 @@
+{
+  "name": "partline",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.js --dev",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "preview": "node --env-file-if-exists=.env server/index.js",
+    "lint": "oxlint src server api tests vite.config.js",
+    "test": "node --import ./tests/register-aliases.js --test tests/*.test.js",
+    "format": "prettier --write src server api tests vite.config.js jsconfig.json vercel.json index.html",
+    "format:check": "prettier --check src server api tests vite.config.js jsconfig.json vercel.json index.html"
+  },
+  "dependencies": {
+    "@fontsource-variable/golos-text": "^5.3.0",
+    "@reduxjs/toolkit": "^2.13.0",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-redux": "^9.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
